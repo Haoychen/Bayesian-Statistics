@@ -1,0 +1,23 @@
+ 
+Some notes on Problem 5 (Chapter 2 Exercise 21): 
+
+ 
+1. The data files are not at www.stat.columbia.edu/~gelman/book despite what the problem says.  Rather, look in
+
+www.stat.columbia.edu/~gelman/bda.course/
+
+
+2. To be clear, though part (a) says to plot the "proportion liberal in each state vs Obama vote share" we should continue to use the original definition, that is, those who label themselves as 'very liberal'.  
+ 
+ 
+3. This survey had zero respondents in Alaska and just one in Hawaii so we get rid of those two states, as instructed in the problem.  I would suggest you exclude Washington DC also (since it's such an outlier with Obama vote share over 90%).  
+ 
+ 
+4. Note that we may be "replicating the procedure used in Section 2.8 [actually 2.7] to estimate cancer rates" but we are not using the same model.  The Gamma-Poisson model is not appropriate here, use Beta-Binomial.
+ 
+ 
+5. The part of the procedure we are meant to replicate is the construction of the prior: Equate the theoretical mean and variance of the {y_j / n_j} to the sample mean and variance, and solve for the Beta distribution parameters.
+
+ 
+
+ 
