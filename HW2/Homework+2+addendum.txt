@@ -1,0 +1,11 @@
+ 
+On problem 3 (Chapter 3 Exercise 7): 
+ 
+For the binomial model you have to assume that total vehicles b+v has a Poisson distribution, and b is *conditionally* Binomial.  
+
+
+ 
+On problem 5 (Chapter 3 Exercise 11):
+ 
+Part (a).  "Reproduce all the computations" here means: contour plot of posterior adjacent to scatterplot of random sample, analogous to Figure 3.3 (both plots on the same scale!); and histogram of random sample from posterior of LD50, analogous to Figure 3.4
+ 
