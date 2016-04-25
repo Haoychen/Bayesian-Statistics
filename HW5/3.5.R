@@ -47,3 +47,19 @@ for (i in 1:nsim) {
     sd[i] <- exp(sample(logsdgrid, 1, prob = dens[muindex[i],]))
 }
 print(rbind(summ(mu), summ(sd)))
+
+
+# 3.5d
+z <- matrix(NA, nsim, length(y))
+for (i in 1:length(y)){
+    lower <- pnorm(y[i] - .5, mu, sd)
+    upper <- pnorm(y[i] + .5, mu, sd)
+    z[, i] <- qnorm(lower + runif(nsim) * (upper - lower), mu, sd)
+}
+mean((z[, 1] - z[, 2]) ^ 2)
+
+
+# 8.11 b
+n <- 100: 2000
+p <- choose(100, 19) * choose(n - 100, 70) / choose(n, 89) * 81 / (n - 89)
+plot(n, p)
